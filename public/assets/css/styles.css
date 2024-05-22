@@ -1,0 +1,156 @@
+:root {
+  --color-main: #03a903;
+  --color-second: red;
+  --color-white: white;
+}
+
+* {
+  margin: 0px;
+  font-family: Poppins, sans-serif;
+}
+
+.active, .breadcrumb .active {
+  color: var(--color-second);
+}
+
+.spacer {
+  height: 50px;
+}
+
+@media (min-width: 992px) {
+  .spacer {
+    height: 82px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-second);
+}
+
+a, .btn {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.row {
+  margin: 0px;
+}
+
+.cont {
+  padding: 5vh 5vw;
+}
+
+@media (min-width: 768px) {
+  .cont {
+    padding: 10vh 10vw;
+  }
+}
+
+.hero_top {
+  min-height: 50vh;
+}
+
+@media (min-width: 768px) {
+  .hero_top {
+    min-height: 100vh;
+  }
+}
+
+.hero_bottom {
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .hero_bottom {
+    margin-top: -10vh;
+  }
+}
+
+.form-check {
+  border: 1px solid var(--bs-blue);
+  font-weight: bold;
+  color: var(--bs-blue);
+  background-color: white;
+}
+
+.active_tab {
+  color: white;
+  background-color: var(--bs-blue);
+}
+
+.subheader {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--color-second);
+}
+
+.header {
+  font-weight: bold;
+  color: var(--color-main);
+  text-transform: capitalize;
+}
+
+.parking-spot {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+.available {
+  cursor: pointer;
+  border-style: solid;
+  border-color: var(--color-main);
+}
+
+.selected {
+  background-color: var(--color-main);
+}
+
+.occupied {
+}
+
+.park_list {
+  transform: rotate(90deg);
+}
+
+@media (min-width: 768px) {
+  .park_list {
+    transform: rotate(0deg);
+  }
+}
+
+.plan_btn {
+  color: var(--color-main);
+  background-color: #ffffff;
+}
+
+.selected_plan {
+  background-color: var(--color-main);
+  color: #ffffff;
+}
+
